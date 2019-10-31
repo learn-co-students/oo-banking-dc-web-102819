@@ -1,9 +1,5 @@
 require_relative "bank_account.rb"
 require 'pry'
-<<<<<<< HEAD
-=======
-
->>>>>>> b2bbd27de5cd0f15d38c5ef42e5904e7504ec4fb
 class Transfer
   attr_accessor :sender, :receiver, :amount, :status
 
@@ -28,14 +24,6 @@ class Transfer
   end
 
   def execute_transaction
-<<<<<<< HEAD
-    @sender.balance -= @amount
-    @receiver.balance += @amount
-    # binding.pry
-    
-  end
-
-=======
     if @sender.balance > @amount && @sender.status == "open" && @receiver.status == "open" && @status == "pending"
       @sender.balance -= @amount
       @receiver.balance += @amount
@@ -54,5 +42,4 @@ class Transfer
       @status = "reversed"
     end
   end
->>>>>>> b2bbd27de5cd0f15d38c5ef42e5904e7504ec4fb
 end
