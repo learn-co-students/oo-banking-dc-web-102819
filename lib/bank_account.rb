@@ -19,7 +19,11 @@ class BankAccount
     end
 
     def deposit(money)
+<<<<<<< HEAD
         @balance += money 
+=======
+        @balance += money
+>>>>>>> b2bbd27de5cd0f15d38c5ef42e5904e7504ec4fb
         # binding.pry
     end
 
