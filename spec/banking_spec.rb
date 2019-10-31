@@ -32,8 +32,8 @@ describe "BankAccount" do
     end
   end
 
-  describe '#display_balance' doansfer can only happen once (FAILE
-    it "can display its balance" do
+  describe '#display_balance' do 
+  it "can display itslarn balance" do
       expect(avi.display_balance).to eq("Your balance is $#{avi.balance}.")
     end
   end
