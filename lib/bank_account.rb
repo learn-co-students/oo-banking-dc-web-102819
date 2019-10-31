@@ -19,6 +19,23 @@ class BankAccount
     end
 
     def deposit(money)
-       binding.pry
+        @balance += money 
+        # binding.pry
+    end
+
+    def display_balance
+        "Your balance is $#{self.balance}."
+    end
+
+    def valid?
+        if @balance > 0 && @status == "open"
+            true
+        else
+            false
+        end
+    end
+
+    def close_account
+        self.status = "closed"
     end
 end
